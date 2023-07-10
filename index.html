@@ -4,16 +4,22 @@
         <link rel="stylesheet" href="style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <script src="index.js"></script>
 
         <title>Mixed Messages</title>
     </head>
-    <body>
+    <body onload="generateMessage()">
+
         <header>
             <h1>Mixed Messages</h1>
         </header>
+
         <main>
-            
+            <h2>Generated Message</h2>
+            <section id="message"></section>
+            <button id="genButton" onclick="generateMessage()">Generate another</button>
         </main>
+
     </body>
 </html>
